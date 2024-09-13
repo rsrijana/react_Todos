@@ -27,12 +27,8 @@ function App() {
   // ]
   const handleSubmit =()=>{
     const initialUsers = users;
-    console.log("Initial users: ", initialUsers);
     user.id = initialUsers.length +1;
-    console.log("this is new user");
     const addedUsers = [...initialUsers, ...[user]]
-    console.log("this is srijana");
-    console.log("Added users:", addedUsers);
     localStorage.setItem('info', JSON.stringify(addedUsers))
     handleClear();
   }
