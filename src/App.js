@@ -20,11 +20,7 @@ function App() {
       setShow(false);
   }
   const[users, setUsers] = useState(JSON.parse(localStorage.getItem('info'))|| []);
-  // const users = [{
-  //   id: 1, name:'aad'  , location:'yyyy', email: 'aaa@gmail.com'},
-  //   {id: 2, name: 'bbbb', location: 'yfkgfjhg', email: 'bbb@gmail.com'},
-  //   {id: 3, name: 'cccc', location: 'ghhjhhhh', email: 'cccc@gmail.com'},
-  // ]
+  
   const handleSubmit =()=>{
     const initialUsers = users;
     user.id = initialUsers.length +1;
